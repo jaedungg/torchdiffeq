@@ -305,7 +305,7 @@ if __name__ == '__main__':
 
     criterion = nn.CrossEntropyLoss().to(device)
 
-    train_loader, test_loader, train_eval_loader = get_mnist_loaders(
+    train_loader, test_loader, train_eval_loader = get_cifar10_loaders(
         args.data_aug, args.batch_size, args.test_batch_size
     )
 
